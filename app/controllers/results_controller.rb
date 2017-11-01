@@ -1,4 +1,6 @@
 class ResultsController < ApplicationController
+  require 'net/http'
+  
   def index
     raw_data = [URI('http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=ttc&r=504&s=1581'), URI('http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=ttc&r=514&s=1581')]
     result = []
