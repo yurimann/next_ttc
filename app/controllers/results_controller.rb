@@ -1,6 +1,6 @@
 class ResultsController < ApplicationController
   require 'net/http'
-  skip_before_action :verify_authenticity_token, if: :json_request?
+  skip_before_action :verify_authenticity_token
 
   def index
     raw_data = [URI('http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=ttc&r=504&s=1581'), URI('http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=ttc&r=514&s=1581')]
@@ -68,9 +68,4 @@ class ResultsController < ApplicationController
 
   end
 
-  protected
-
-  def json_request?
-    request.format.json?
-  end
 end
