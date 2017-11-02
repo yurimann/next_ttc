@@ -14,7 +14,7 @@ $(document).on("ready", function(){
 
   // $.ajax({
   //   url: "https://peaceful-everglades-87508.herokuapp.com/results",
-  //   dataType: 'text/json',
+  //   dataType: 'json',
   //   type: 'POST',
   //   data: {}
   // }).done(function(e){
