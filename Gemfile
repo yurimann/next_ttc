@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 gem 'jquery-rails'
 gem 'nokogiri'
+gem 'rack-cors'
 # gem 'net/http'
 # gem 'active_support/all'
 gem 'awesome_print'

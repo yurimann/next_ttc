@@ -12,4 +12,13 @@ $(document).on("ready", function(){
       url: url
   });
 
+  // $.ajax({
+  //   url: "https://peaceful-everglades-87508.herokuapp.com/results",
+  //   dataType: 'JSON',
+  //   type: 'POST'
+  // }).done(function(e){
+  //   console.log(e);
+  // }).fail(function(e){
+  //   console.log(e);
+  // })
 })
