@@ -13,14 +13,15 @@ $(document).on("ready", function(){
   });
 
   // $.ajax({
-  //   url: "https://peaceful-everglades-87508.herokuapp.com/results",
-  //   // url: "/results",
-  //   dataType: 'json',
+  //   // url: "https://peaceful-everglades-87508.herokuapp.com/next",
+  //   url: "/next",
+  //   dataType: 'JSON',
   //   type: 'POST',
   //   data: {}
   // }).done(function(e){
   //   console.log(e);
-  // }).fail(function(e){
-  //   console.log(e);
+  // }).fail(function(jqXHR, textStatus, errorThrown){
+  //    console.log("error " + textStatus);
+  //    console.log("incoming Text " + jqXHR.responseText);
   // })
 })

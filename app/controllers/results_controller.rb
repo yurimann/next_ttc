@@ -63,7 +63,7 @@ class ResultsController < ApplicationController
 
     respond_to do |format|
       format.html
-      format.json {render json: @result_string}
+      format.json {render json: @result_string.to_json}
     end
   end
 
