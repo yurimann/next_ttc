@@ -60,12 +60,11 @@ class ResultsController < ApplicationController
       x += 1
     end
 
-    
+
     respond_to do |format|
       format.html
       format.json {render json: @result_string}
     end
-
   end
 
 end
