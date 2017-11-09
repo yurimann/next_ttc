@@ -10,8 +10,15 @@ class ResultsController < ApplicationController
     @result_string = ""
     parsed_data = helpers.parse_data(params[:text])
 
-    if parsed_data.length == 1
+    if parsed_data.length <= 1
       raw_data = helpers.collate(parsed_data)
+      if raw_data == "Please choose west or east"
+        respond_to do |format|
+          format.html
+          format.json {render json: raw_data}
+        end
+        return raw_data
+      end
     else
       raw_data = helpers.interpret(parsed_data)
       if raw_data == "error"

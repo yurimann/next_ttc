@@ -30,11 +30,7 @@ module ApplicationHelper
         raw_data = [URI('http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=ttc&r=504&s=3070'), URI('http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=ttc&r=514&s=3070')]
     else
       response_data = "Please choose west or east"
-      respond_to do |format|
-        format.json{render json: response_data}
-      end
       return response_data
-      render root_path
     end
   end
 
@@ -45,6 +41,10 @@ module ApplicationHelper
         x = {"north": "6298", "south": "14163" }
       when "75"
         x = {"north": "10013", "south": "8539" }
+      when "504"
+        x = {"west": "1581", "east": "3070"}
+      when "514"
+        x = {"west": "1581", "east": "3070"}
       else
         return "error"
       end
