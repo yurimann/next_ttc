@@ -10,13 +10,13 @@
 # For full documentation of agent configuration options, please refer to
 # https://docs.newrelic.com/docs/agents/ruby-agent/installation-configuration/ruby-agent-configuration
 
-common: &default_settings
+# common: &default_settings
   # Required license key associated with your New Relic account.
-  license_key: de8a3c7f089a3e5ec531fcf570336b5c296120f1
+  # license_key: de8a3c7f089a3e5ec531fcf570336b5c296120f1
 
   # Your application name. Renaming here affects where data displays in New
   # Relic.  For more details, see https://docs.newrelic.com/docs/apm/new-relic-apm/maintenance/renaming-applications
-  app_name: My Application
+  # app_name: My Application
 
   # To disable the agent regardless of other settings, uncomment the following:
   # agent_enabled: false
